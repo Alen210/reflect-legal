@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reflect — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #6b7280; --border: #e5e7eb; --accent: #111827;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0b0c; --fg: #e7e7ea; --muted: #9ca3af; --border: #26262a; --accent: #f3f4f6; }
+  }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 24px 96px; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.02em; }
+  h2 { font-size: 19px; margin: 36px 0 8px; letter-spacing: -0.01em; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); font-size: 14px; }
+  .lang { margin: 16px 0 0; font-size: 14px; }
+  .lang a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 1px; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  hr { border: 0; border-top: 1px solid var(--border); margin: 56px 0; }
+  a { color: inherit; }
+  strong { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <section id="en">
+    <h1>Reflect — Privacy Policy</h1>
+    <p class="muted">Last updated: July 2026</p>
+    <p class="lang"><a href="#de">Deutsche Version ↓</a></p>
+
+    <p>Reflect is a private journal. The design premise is simple: <strong>your
+    thoughts belong to you.</strong> This page explains what data exists, where
+    it lives, and who processes it.</p>
+
+    <h2>What we store</h2>
+    <ul>
+      <li><strong>Account</strong>: your email address and a hashed password
+        (never the password itself), managed by Supabase Auth.</li>
+      <li><strong>Your journal</strong>: thoughts, threads, annotations (context
+        and comments), themes, review/refine history, and AI chat conversations.</li>
+      <li><strong>Usage counters</strong>: how many AI messages you've used this
+        month (numbers only, no content).</li>
+    </ul>
+    <p>All of it is stored encrypted at rest in a Supabase (PostgreSQL) database
+    in the <strong>European Union</strong> (Frankfurt, eu-central-1), isolated
+    per account by row-level security: no other user can query your rows, ever.</p>
+
+    <h2>On your device</h2>
+    <p>Your journal is cached on-device so the app opens offline. That cache,
+    your drafts, and anything waiting to sync are <strong>encrypted</strong>
+    with a key held in the iOS Keychain. You can additionally enable
+    <strong>App Lock</strong> (Face ID / passcode) in Settings. Your login
+    session is likewise Keychain-protected.</p>
+
+    <h2>AI processing</h2>
+    <p>Reflect's intelligence features send journal text to:</p>
+    <ul>
+      <li><strong>OpenAI</strong> — to embed thoughts for search/themes, to
+        answer your chat messages, and to generate refine questions.</li>
+      <li><strong>Cohere</strong> — to rank which of your thoughts are most
+        relevant to a chat message.</li>
+    </ul>
+    <p>Both process the text to serve your request and do <strong>not</strong>
+    use API data to train their models. No AI feature runs without your action
+    (posting, chatting, refining).</p>
+
+    <h2>Payments</h2>
+    <p>Subscriptions are processed by Apple and managed through
+    <strong>RevenueCat</strong>, which receives your app user ID and purchase
+    state — never journal content.</p>
+
+    <h2>What we don't do</h2>
+    <ul>
+      <li>No ads, no ad SDKs, no analytics trackers, no data sales.</li>
+      <li>No sharing of journal content with anyone beyond the processors above.</li>
+      <li>Notifications never contain journal text.</li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <ul>
+      <li><strong>Export</strong>: Settings → Export vault gives you everything
+        as JSON, annotations included.</li>
+      <li><strong>Delete</strong>: Settings → Delete account permanently erases
+        your account and every row of your data. This is immediate and
+        irreversible.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions or requests: <a href="mailto:youbetteramd@gmail.com">youbetteramd@gmail.com</a></p>
+  </section>
+
+  <hr>
+
+  <section id="de" lang="de">
+    <h1>Reflect — Datenschutzerklärung</h1>
+    <p class="muted">Stand: Juli 2026</p>
+    <p class="lang"><a href="#en">English version ↑</a></p>
+
+    <p>Reflect ist ein privates Journal. Das Grundprinzip ist einfach:
+    <strong>Deine Gedanken gehören dir.</strong> Diese Seite erklärt, welche
+    Daten existieren, wo sie liegen und wer sie verarbeitet.</p>
+
+    <h2>Was wir speichern</h2>
+    <ul>
+      <li><strong>Konto</strong>: deine E-Mail-Adresse und ein gehashtes
+        Passwort (niemals das Passwort selbst), verwaltet über Supabase Auth.</li>
+      <li><strong>Dein Journal</strong>: Gedanken, Threads, Anmerkungen
+        (Kontext und Kommentare), Themen, Review-/Verfeinerungs-Verlauf und
+        KI-Chat-Unterhaltungen.</li>
+      <li><strong>Nutzungszähler</strong>: wie viele KI-Nachrichten du diesen
+        Monat verwendet hast (nur Zahlen, keine Inhalte).</li>
+    </ul>
+    <p>Alles wird verschlüsselt in einer Supabase-Datenbank (PostgreSQL) in der
+    <strong>Europäischen Union</strong> (Frankfurt, eu-central-1) gespeichert,
+    pro Konto durch Row-Level-Security isoliert: Kein anderer Nutzer kann
+    jemals deine Daten abfragen.</p>
+
+    <h2>Auf deinem Gerät</h2>
+    <p>Dein Journal wird auf dem Gerät zwischengespeichert, damit die App
+    offline funktioniert. Dieser Cache, deine Entwürfe und alles, was auf
+    Synchronisierung wartet, sind <strong>verschlüsselt</strong> — der
+    Schlüssel liegt im iOS-Schlüsselbund. Zusätzlich kannst du in den
+    Einstellungen die <strong>App-Sperre</strong> (Face ID / Code) aktivieren.
+    Deine Sitzung ist ebenfalls über den Schlüsselbund geschützt.</p>
+
+    <h2>KI-Verarbeitung</h2>
+    <p>Die Intelligenz-Funktionen von Reflect senden Journaltext an:</p>
+    <ul>
+      <li><strong>OpenAI</strong> — um Gedanken für Suche/Themen zu indexieren,
+        Chat-Nachrichten zu beantworten und Verfeinerungsfragen zu erzeugen.</li>
+      <li><strong>Cohere</strong> — um zu bewerten, welche deiner Gedanken für
+        eine Chat-Nachricht am relevantesten sind.</li>
+    </ul>
+    <p>Beide verarbeiten den Text ausschließlich zur Erfüllung deiner Anfrage
+    und nutzen API-Daten <strong>nicht</strong> zum Training ihrer Modelle.
+    Keine KI-Funktion läuft ohne deine Aktion (Posten, Chatten, Verfeinern).</p>
+
+    <h2>Zahlungen</h2>
+    <p>Abonnements werden von Apple abgewickelt und über
+    <strong>RevenueCat</strong> verwaltet. RevenueCat erhält deine
+    App-Nutzer-ID und den Kaufstatus — niemals Journalinhalte.</p>
+
+    <h2>Was wir nicht tun</h2>
+    <ul>
+      <li>Keine Werbung, keine Werbe-SDKs, keine Analytics-Tracker, kein
+        Datenverkauf.</li>
+      <li>Keine Weitergabe von Journalinhalten an irgendwen außer den oben
+        genannten Verarbeitern.</li>
+      <li>Benachrichtigungen enthalten niemals Journaltext.</li>
+    </ul>
+
+    <h2>Deine Rechte</h2>
+    <ul>
+      <li><strong>Export</strong>: Einstellungen → Vault exportieren liefert
+        dir alles als JSON, inklusive Anmerkungen.</li>
+      <li><strong>Löschen</strong>: Einstellungen → Konto löschen entfernt dein
+        Konto und jede Zeile deiner Daten dauerhaft. Sofort und
+        unwiderruflich.</li>
+    </ul>
+
+    <h2>Kontakt</h2>
+    <p>Fragen oder Anliegen: <a href="mailto:youbetteramd@gmail.com">youbetteramd@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
