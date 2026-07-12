@@ -62,22 +62,26 @@
     session is likewise Keychain-protected.</p>
 
     <h2>AI processing</h2>
-    <p>Reflect's intelligence features send journal text to:</p>
+    <p>Reflect's intelligence features send journal text — and, for voice
+    notes, the audio recording — to:</p>
     <ul>
       <li><strong>OpenAI</strong> — to embed thoughts for search/themes, to
-        answer your chat messages, to write weekly recaps, and to generate
-        refine questions.</li>
+        transcribe voice notes, to answer your chat messages, to write weekly
+        recaps, and to generate refine questions.</li>
       <li><strong>Cohere</strong> — to rank which of your thoughts are most
-        relevant to a chat message.</li>
+        relevant to a chat message (text only).</li>
     </ul>
-    <p>Both process the text to serve your request and do <strong>not</strong>
+    <p>Both process the data to serve your request and do <strong>not</strong>
     use API data to train their models. Most of this happens when you act
-    (posting, chatting, refining). On <strong>Pro</strong> accounts some of it
-    runs automatically when you open the app: indexing new thoughts, preparing
-    your weekly recap and refine questions, and suggesting theme icons.</p>
-    <p>We also record AI <strong>usage metadata</strong> with
-    <strong>Langfuse</strong> (which feature ran, model and token counts —
-    never journal text) to monitor cost and reliability.</p>
+    (posting, speaking, chatting, refining). On <strong>Pro</strong> accounts
+    some of it runs automatically when you open the app: indexing new
+    thoughts, preparing your weekly recap and refine questions, and suggesting
+    theme icons.</p>
+    <p>We also send AI <strong>usage records</strong> to
+    <strong>Langfuse</strong> to monitor cost and reliability: pseudonymous
+    identifiers (your account id, conversation and thread ids), timestamps,
+    feature and model names, and token counts — never journal text or
+    audio.</p>
 
     <h2>Payments</h2>
     <p>Subscriptions are processed by Apple and managed through
@@ -100,8 +104,10 @@
         counters are not part of the export.</li>
       <li><strong>Delete</strong>: Settings → Delete account immediately and
         irreversibly erases your journal and account data from our systems.
-        Purchase records held by Apple/RevenueCat and AI usage metadata held
-        by Langfuse are deleted under those processors' own schedules.</li>
+        Purchase records remain with Apple/RevenueCat under their retention
+        rules. AI usage records at Langfuse (pseudonymous ids and counts —
+        never content) are <strong>not yet erased automatically</strong>;
+        email us and we delete them on request.</li>
     </ul>
 
     <h2>Contact</h2>
@@ -143,23 +149,27 @@
     Deine Sitzung ist ebenfalls über den Schlüsselbund geschützt.</p>
 
     <h2>KI-Verarbeitung</h2>
-    <p>Die Intelligenz-Funktionen von Reflect senden Journaltext an:</p>
+    <p>Die Intelligenz-Funktionen von Reflect senden Journaltext — und bei
+    Sprachnotizen die Audioaufnahme — an:</p>
     <ul>
       <li><strong>OpenAI</strong> — um Gedanken für Suche/Themen zu indexieren,
-        Chat-Nachrichten zu beantworten, Wochenrückblicke zu schreiben und
-        Verfeinerungsfragen zu erzeugen.</li>
+        Sprachnotizen zu transkribieren, Chat-Nachrichten zu beantworten,
+        Wochenrückblicke zu schreiben und Verfeinerungsfragen zu erzeugen.</li>
       <li><strong>Cohere</strong> — um zu bewerten, welche deiner Gedanken für
-        eine Chat-Nachricht am relevantesten sind.</li>
+        eine Chat-Nachricht am relevantesten sind (nur Text).</li>
     </ul>
-    <p>Beide verarbeiten den Text ausschließlich zur Erfüllung deiner Anfrage
+    <p>Beide verarbeiten die Daten ausschließlich zur Erfüllung deiner Anfrage
     und nutzen API-Daten <strong>nicht</strong> zum Training ihrer Modelle.
-    Das meiste passiert, wenn du handelst (Schreiben, Chatten, Verfeinern).
-    Bei <strong>Pro</strong>-Konten läuft ein Teil automatisch beim Öffnen der
-    App: das Indexieren neuer Gedanken, das Vorbereiten von Wochenrückblick
-    und Verfeinerungsfragen sowie Symbolvorschläge für Themen.</p>
-    <p>Zusätzlich erfassen wir KI-<strong>Nutzungsmetadaten</strong> mit
-    <strong>Langfuse</strong> (welche Funktion lief, Modell und Token-Anzahl —
-    niemals Journaltext), um Kosten und Zuverlässigkeit zu überwachen.</p>
+    Das meiste passiert, wenn du handelst (Schreiben, Sprechen, Chatten,
+    Verfeinern). Bei <strong>Pro</strong>-Konten läuft ein Teil automatisch
+    beim Öffnen der App: das Indexieren neuer Gedanken, das Vorbereiten von
+    Wochenrückblick und Verfeinerungsfragen sowie Symbolvorschläge für
+    Themen.</p>
+    <p>Zusätzlich senden wir KI-<strong>Nutzungsdaten</strong> an
+    <strong>Langfuse</strong>, um Kosten und Zuverlässigkeit zu überwachen:
+    pseudonyme Kennungen (deine Konto-ID, Unterhaltungs- und Thread-IDs),
+    Zeitstempel, Funktions- und Modellnamen sowie Token-Zahlen — niemals
+    Journaltext oder Audio.</p>
 
     <h2>Zahlungen</h2>
     <p>Abonnements werden von Apple abgewickelt und über
@@ -184,8 +194,11 @@
         Exports.</li>
       <li><strong>Löschen</strong>: Einstellungen → Konto löschen entfernt dein
         Journal und deine Kontodaten sofort und unwiderruflich aus unseren
-        Systemen. Kaufdaten bei Apple/RevenueCat und KI-Nutzungsmetadaten bei
-        Langfuse werden nach den Fristen dieser Verarbeiter gelöscht.</li>
+        Systemen. Kaufdaten verbleiben bei Apple/RevenueCat nach deren
+        Aufbewahrungsregeln. KI-Nutzungsdaten bei Langfuse (pseudonyme IDs
+        und Zähler — nie Inhalte) werden <strong>derzeit noch nicht
+        automatisch gelöscht</strong> — schreib uns, dann löschen wir sie auf
+        Anfrage.</li>
     </ul>
 
     <h2>Kontakt</h2>
