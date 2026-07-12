@@ -65,13 +65,19 @@
     <p>Reflect's intelligence features send journal text to:</p>
     <ul>
       <li><strong>OpenAI</strong> — to embed thoughts for search/themes, to
-        answer your chat messages, and to generate refine questions.</li>
+        answer your chat messages, to write weekly recaps, and to generate
+        refine questions.</li>
       <li><strong>Cohere</strong> — to rank which of your thoughts are most
         relevant to a chat message.</li>
     </ul>
     <p>Both process the text to serve your request and do <strong>not</strong>
-    use API data to train their models. No AI feature runs without your action
-    (posting, chatting, refining).</p>
+    use API data to train their models. Most of this happens when you act
+    (posting, chatting, refining). On <strong>Pro</strong> accounts some of it
+    runs automatically when you open the app: indexing new thoughts, preparing
+    your weekly recap and refine questions, and suggesting theme icons.</p>
+    <p>We also record AI <strong>usage metadata</strong> with
+    <strong>Langfuse</strong> (which feature ran, model and token counts —
+    never journal text) to monitor cost and reliability.</p>
 
     <h2>Payments</h2>
     <p>Subscriptions are processed by Apple and managed through
@@ -80,18 +86,22 @@
 
     <h2>What we don't do</h2>
     <ul>
-      <li>No ads, no ad SDKs, no analytics trackers, no data sales.</li>
+      <li>No ads, no ad SDKs, no advertising or behavioral analytics, no data
+        sales.</li>
       <li>No sharing of journal content with anyone beyond the processors above.</li>
       <li>Notifications never contain journal text.</li>
     </ul>
 
     <h2>Your rights</h2>
     <ul>
-      <li><strong>Export</strong>: Settings → Export vault gives you everything
-        as JSON, annotations included.</li>
-      <li><strong>Delete</strong>: Settings → Delete account permanently erases
-        your account and every row of your data. This is immediate and
-        irreversible.</li>
+      <li><strong>Export</strong>: Settings → Export stream of thoughts gives
+        you every thread and post, with your context and comment notes, as
+        Markdown or JSON. AI-generated content (chats, themes, recaps) and app
+        counters are not part of the export.</li>
+      <li><strong>Delete</strong>: Settings → Delete account immediately and
+        irreversibly erases your journal and account data from our systems.
+        Purchase records held by Apple/RevenueCat and AI usage metadata held
+        by Langfuse are deleted under those processors' own schedules.</li>
     </ul>
 
     <h2>Contact</h2>
@@ -136,13 +146,20 @@
     <p>Die Intelligenz-Funktionen von Reflect senden Journaltext an:</p>
     <ul>
       <li><strong>OpenAI</strong> — um Gedanken für Suche/Themen zu indexieren,
-        Chat-Nachrichten zu beantworten und Verfeinerungsfragen zu erzeugen.</li>
+        Chat-Nachrichten zu beantworten, Wochenrückblicke zu schreiben und
+        Verfeinerungsfragen zu erzeugen.</li>
       <li><strong>Cohere</strong> — um zu bewerten, welche deiner Gedanken für
         eine Chat-Nachricht am relevantesten sind.</li>
     </ul>
     <p>Beide verarbeiten den Text ausschließlich zur Erfüllung deiner Anfrage
     und nutzen API-Daten <strong>nicht</strong> zum Training ihrer Modelle.
-    Keine KI-Funktion läuft ohne deine Aktion (Posten, Chatten, Verfeinern).</p>
+    Das meiste passiert, wenn du handelst (Schreiben, Chatten, Verfeinern).
+    Bei <strong>Pro</strong>-Konten läuft ein Teil automatisch beim Öffnen der
+    App: das Indexieren neuer Gedanken, das Vorbereiten von Wochenrückblick
+    und Verfeinerungsfragen sowie Symbolvorschläge für Themen.</p>
+    <p>Zusätzlich erfassen wir KI-<strong>Nutzungsmetadaten</strong> mit
+    <strong>Langfuse</strong> (welche Funktion lief, Modell und Token-Anzahl —
+    niemals Journaltext), um Kosten und Zuverlässigkeit zu überwachen.</p>
 
     <h2>Zahlungen</h2>
     <p>Abonnements werden von Apple abgewickelt und über
@@ -151,8 +168,8 @@
 
     <h2>Was wir nicht tun</h2>
     <ul>
-      <li>Keine Werbung, keine Werbe-SDKs, keine Analytics-Tracker, kein
-        Datenverkauf.</li>
+      <li>Keine Werbung, keine Werbe-SDKs, keine Werbe- oder
+        Verhaltensanalyse, kein Datenverkauf.</li>
       <li>Keine Weitergabe von Journalinhalten an irgendwen außer den oben
         genannten Verarbeitern.</li>
       <li>Benachrichtigungen enthalten niemals Journaltext.</li>
@@ -160,11 +177,15 @@
 
     <h2>Deine Rechte</h2>
     <ul>
-      <li><strong>Export</strong>: Einstellungen → Vault exportieren liefert
-        dir alles als JSON, inklusive Anmerkungen.</li>
+      <li><strong>Export</strong>: Einstellungen → Gedankenstrom exportieren
+        liefert dir jeden Thread und Gedanken samt deinen Kontext- und
+        Kommentar-Notizen als Markdown oder JSON. KI-generierte Inhalte
+        (Chats, Themen, Wochenrückblicke) und App-Zähler sind nicht Teil des
+        Exports.</li>
       <li><strong>Löschen</strong>: Einstellungen → Konto löschen entfernt dein
-        Konto und jede Zeile deiner Daten dauerhaft. Sofort und
-        unwiderruflich.</li>
+        Journal und deine Kontodaten sofort und unwiderruflich aus unseren
+        Systemen. Kaufdaten bei Apple/RevenueCat und KI-Nutzungsmetadaten bei
+        Langfuse werden nach den Fristen dieser Verarbeiter gelöscht.</li>
     </ul>
 
     <h2>Kontakt</h2>
